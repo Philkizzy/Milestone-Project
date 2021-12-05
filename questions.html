@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-section">
+        <h1 class="title">Einstein</h1>
+        <img class="logo-img" src="images/einstein-removebg-preview.png">
+        <nav class="nav-section">
+            <ul  class="nav-ul">
+                <!-- <li class="nav-li"><a href="#" class="nav-a"> Subjects</a></li> -->
+                <li class="nav-li"><a href="#" class="nav-a"> Rules</a></li>
+                <li class="nav-li"><a href="#" class="nav-a"> About</a></li>
+
+            </ul>
+        </nav>
+        
+          <div id="display" style="display: none;">
+            <div>
+                <h4 id="count-question" style="color: white;"></h4>
+                <h5 class="category" style="color: white;">Category: <span id="category"></span></h5>
+              <h4 style="color: white;" id="ask-question"><span id="question"></span></h4>
+              
+            </div>
+            <div style="color: white;">
+                <!-- <p class="select-question">Please select the correct answer below:</p> -->
+                <div class="all-questions">
+                  <input type="radio" name="choice" id="choice1" value="" class="tout">
+                  <label for="choice1" id="choice1label"></label >
+                  <input type="radio" name="choice" id="choice2" value="" class="tout">
+                  <label for="choice2" id="choice2label"></label>
+                  <input type="radio" name="choice" id="choice3" value="" class="tout">
+                  <label for="choice3" id="choice3label"></label>
+                  <input type="radio" name="choice" id="choice4" value="" class="tout">
+                  <label for="choice4" id="choice4label"></label>
+                </div>
+                
+                <h3 id="result"></h3>
+                <div>
+                  <button id="guess" class="play-button">Guess!</button>
+                </div>
+                
+                <div>
+                  <button id="new" class="play-button">></button>
+                </div>
+            </div>
+          </div>
+          
+    </main>  
+    
+    <script src="code.js"></script>
+</body>
+</html>

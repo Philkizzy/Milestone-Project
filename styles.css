@@ -12,34 +12,44 @@ body{
     
 }
 .logo-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 5%;
+    position: relative;
+    top: 10px;
 }
 .main-section{
-    width: 820px;
-    height: 480px;
+    width: 54%;
+    height: 75%;
     background: linear-gradient(to top, black 50%, black 50%);
     position: absolute;
     left: 366px;
     border-radius: 10px;
 }
+.title{
+    color: white;
+    font-family: 'Comforter Brush', cursive;
+    display: inline;
+}
+
 .nav-ul{
     display: flex;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 5px;
+    position: absolute;
+    margin-left: 500px;
+    top: 10px;
 }
 .nav-li{
     text-decoration: none;
     /* margin: 10px; */
     padding-right: 10px;
+    
 }
 .nav-a{
     text-decoration: none;
     color: white;
+    
 }
 .nav-a:hover{
     text-decoration: underline;
@@ -47,9 +57,9 @@ body{
     color: rgb(116, 161, 161);
 }
 .play-section{
-    position: relative;
-    left: 230px;
-    top: 200px;
+        position: relative;
+        top: 200px;
+    
    
 }
 .play-button{
@@ -60,6 +70,9 @@ body{
     text-transform: uppercase;
     border-radius: 10px;
     border-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media screen and (max-width: 820px) {
     .header-section, .main-section{
@@ -75,3 +88,138 @@ body{
     background-color: black;
   }
 }
+
+.div-subjects{
+    position: relative;
+    padding-top: 100px;
+    padding-left: 50px;
+    
+}
+
+#subjects{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    
+}
+
+option:first-of-type{
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: blue;
+    color: white;
+}
+#level{
+    margin-left: 80px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+#type-question{
+    margin-left: 80px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.rule-li{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.rule-div{
+    position:relative;
+    padding-top: 50px;
+    padding-left: 100px;
+    
+}
+ol {
+    max-width: 350px;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px;
+  }
+  ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+  }
+  ol li::before {
+    content: counter(my-awesome-counter);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    transform: rotate(-10deg);
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999
+
+}
+
+#multiple-questions{
+    color: white;
+}
+
+#result{
+    color: white;
+}
+#new{
+    margin-top: 80px;
+    position: relative;
+    margin-right: 40px;
+}
+.all-questions{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+}
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+    text-align: center;
+  }
+  #ask-question{
+      margin-top: 60px;
+      font-size:larger;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: justify;
+  }
+  .category{
+      margin-top: 50px;
+  }
+  span{
+      font-size: large;
+  }
+  .select-question{
+      margin-top: 30px;
+  }
+  #guess{
+      margin-top: 40px;
+  }
+  .about{
+      margin-top: 100px;
+      text-align: justify;
+      display: flex;
+      align-items:flex-end;
+      position: relative;
+      margin-left: 50px;
+      white-space: normal;
+      line-height: 2em;
+  }
+
+
+
+
