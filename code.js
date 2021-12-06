@@ -1,6 +1,6 @@
 const url = 'https://opentdb.com/api.php?amount=5&type=multiple';
 let number = 0
-
+localStorage.setItem("score", number)
 async function getTrivia() {
   let response = await fetch(url);
   let data = await response.json();
@@ -66,9 +66,7 @@ getTrivia().then((data) => {
 
 
 document.getElementById('new').addEventListener('click', () => {
-    localStorage.setItem("score", number)
-    console.log(number)
-   
+    
  window.location.reload();
 document.getElementById("result1").innerHTML = localStorage.getItem("score");
 });
